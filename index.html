@@ -7,18 +7,21 @@
         <meta name="description" content="lista de documentos"> 
         <meta name ="keywords" content="htmls, css">
         <script src="https://kit.fontawesome.com/e76d8b4ab4.js" crossorigin="anonymous"></script>
+
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,500&display=swap" rel="stylesheet">
+        <link rel=stylesheet" href="css.normalize.css">
         <link rel="stylesheet" href="css/estilo.css">
     </head>
-    <body>
+    <body> 
         <header class="main-header"> 
             <a href="index.html" class="main-header-link">
-                <img src="#" alt="Ola, Mundo">
+                <img src="images/avatar.jpg" alt="Ola, Mundo">
             </a>
-            <h1>
-                Projetos e Groselhas de<br>
-                <strong>Renata Almeida</strong><br>
-                que acredita que pode mudar de vida<br>
-                Retirado de <a href="https://www.w3schools.com/html/default.asp">W3schools</a>
+            <h1 class="main-header-title">
+                Projeto Strata </label><br><br>
+                <strong>Renata Almeida,</strong><br>
+                Futura Menina no Front end uhu \o/ <br>
+                Retirado de <a href="https://www.w3schools.com/html/default.asp" class="main-header-link">W3schools</a>
             </h1>
         </header>
         <main class="main-content">     
@@ -119,7 +122,7 @@
 
                         <h4>text</h4>
 
-                        <p>his is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>. This is <sup>superscript</sup> text and this is <sub>subscript</sub> text. This is <u>underlined</u> and this is <code>code: for (;;) { ... }</code>. Finally, this is <a href="#">a link</a>
+                        <p>his is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>. This is <sup>superscript</sup> text and this is <sub>subscript</sub> text. This is <u>underlined</u> and this is <code>code: for (;;) { ... }</code>. Finally, this is <a href="#"> link</a>
                         </p>
 
                         <h1>Titulo 1</h1>
@@ -298,30 +301,84 @@
                     <hr>
                     <section>
                         <h5>Forms</h5>
-                            <forms>
+                            <form>
                             <label for="name">Nome</label>
-                            <input type="text" id="name"></input><br>
+                            <input type="text" name="name"></input><br>
                             <label for="email">Email</label>
-                            <input type="email" id="email"></input><br>
-                            </forms>
-                            <forms>
-                            <select id="selection">
-                                <option value="selection">Selection</option>
-                                <option value="category">Category</option>
-                                <option value="manufacturing">Manufacturing</option>
-                                <option vlaue="shipping">Shipping</option>
-                                <option value="administration">Administration</option>
-                                <option value="human recources">Human Recourses</option>
+                            <input type="email" name="email"></input><br>
+                            </form>
+                            
+                            <select>
+                                <option value="0">Select...</option>
+                                <option value="1">Category</option>
+                                <option value="2">Manufacturing</option>
+                                <option value="3">Shipping</option>
+                                <option value="4">Administration</option>
+                                <option value="5">Human Recourses</option>
                             </select>
-                            </form>
-                                <input type="radio" id="baixaprioridade" name="b" value="baixa"></input>
-                                <label for="baixaprioridade">Baixa Prioridade</label><br>
-                                <input type="radio" id="mediaprioridade" name="m" value="media"></input>
-                                <label for="mediaprioridade">Media Prioridade</label><br>
-                                <input type="radio" id="altaprioridade" name="a" value="alta"></input>
-                                <label for="altaprioridade">Alta Prioridade</label><br>
+                            
                                 <form>
-                            </form>
+                                <label>
+                                    <input type="radio" name="prioridade" value="baixa"></input>
+                                    <span>Baixa Prioridade</span>
+                                </label><br>
+                                <label>
+                                    <input type="radio" name="prioridade" value="media"></input>
+                                    <span>Media Prioridade</span>
+                                </label><br>
+                                <label>
+                                    <input type="radio" name="prioridade" value="alta"></input>
+                                    <span>Alta prioridade</span>
+                                </label><br>
+
+                                <label>
+                                    <input type="checkbox" value="1" name="copy"></label>
+                                    <span>Envie-me uma copia</span>
+                                <label>
+                                    <input type="checkbox" value="2" name="human"></label> 
+                                    <span>Sou Humano</span>
+                                </form>
+
+                                <form>
+                                <label for="msg">Mensagem:</label><br>
+                                <textarea placeholder="Digite uma mensagem" id="msg"></textarea><br>
+
+                                <input type="submit" class="button-default" value="Enviar">
+                                <input type="reset" class="button-default-stroke" value="Limpar">
+                                </form>
+                                 </section>
+                <section class="main-content-section">
+                    <h5>Imagens</h5>
+                    <div class="gallery-img">
+                        <img src="images/fulls/01.jpg" width="600" height="300"><br>
+                    </div>
+                    <div class="gallery-thumb">
+                        <img src="images/thumbs/01.jpg" width="200" height="100">
+                        <img src="images/thumbs/02.jpg" width="200" height="100">
+                        <img src="images/thumbs/03.jpg" width="200" height="100">
+                        <img src="images/thumbs/04.jpg" width="200" height="100">
+                        <img src="images/thumbs/05.jpg" width="200" height="100">
+                        <img src="images/thumbs/06.jpg" width="200" height="100">
+                        </div>
+                </section>
+                        <section>
+                            <h6>Left &amp; Right</h6>
+                            <p>
+                            <img src="images/avatar.jpg" alt="" class="img-left">
+                            Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. 
+                            tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismo xd. Vestibulum ante ipsum primis in faucibus vestibulum. 
+                            Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.
+                            </p>
+                        </section>
+                        <section>
+                            <p>
+                            <img src="images/avatar.jpg" alt="" class="img-right">
+                            Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. 
+                            tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismo xd. Vestibulum ante ipsum primis in faucibus vestibulum. 
+                            Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.
+                            </p>
+                        </section>
+                        <hr>
                 </section>
         </main>
         <footer class="main-footer"></footer>
